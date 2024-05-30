@@ -1,0 +1,93 @@
+body {
+    font-family: Verdana, monospace, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    background-image: url('http://i.stack.imgur.com/kx8MT.gif');
+    background-size: cover;
+    padding:0;
+    margin:0;
+    
+}
+#table{
+    max-width: 700px;
+    height: 450px;
+    padding: 20px;
+    margin: auto;
+    position: relative;
+    top: 150px;
+}
+#table,th{
+    text-align: center;
+    
+}
+#title{
+    max-width: 600px;
+    padding: 5px;
+    margin: auto;
+    position: relative;
+    top: 60px;
+
+}
+#director{
+    max-width: 600px;
+    padding: 5px;
+    margin: auto;
+    position: relative;
+    top: 62px;
+}
+#url{
+    max-width: 600px;
+    padding: 5px;
+    margin: auto;
+    position: relative;
+    top: 64px;
+}
+#button{
+    padding: 10px;
+    margin: auto;
+    position: relative;
+    top: 68px;
+    left: 350px;
+}
+#title:hover{
+    background-color: rgb(238, 237, 237);
+}
+#director:hover{
+    background-color: rgb(238, 237, 237);
+}
+#url:hover{
+    background-color: rgb(238, 237, 237);
+}
+@keyframes example{
+    0%  { left:0px; top:200px;}
+    100% { left:0px; top:0px;}
+    
+}
+
+.container{
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+}
+#cloud{
+    width: 220px;
+    padding: 10px;
+    margin: auto;
+    position: relative;
+    top: 68px;
+    text-align: center;
+    animation: zoom-in-zoom-out 1s ease infinite;
+    font-size: large;
+}
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(0.5, 0.5);
+    }
+    50% {
+      transform: scale(0.75, 0.75);
+    }
+    100% {
+      transform: scale(0.5, 0.5);
+    }
+}
